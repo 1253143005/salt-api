@@ -33,7 +33,7 @@
 
 ## Editor
 
-[打开设置](md/installation.md?id=工具tab)
+?> [打开 设置](md/installation.md?id=工具tab)
 
 ![](SimpleSaveManager_md_files/f31d4300-d1f4-11ed-afb0-c340f1571a81.jpeg?v=1&type=image)
 

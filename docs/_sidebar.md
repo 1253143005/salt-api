@@ -5,7 +5,8 @@
 - 代码
 	- [Core](md/scripts/core.md)
 	- [Simple](md/scripts/simple.md)
-		- [SimpleSaveManager](md/scripts/Simple/SimpleSaveManager.md)
+		-  [SimpleSaveManager](md/scripts/Simple/SimpleSaveManager.md)
+		-  [SimplePool](md/scripts/Simple/SimplePool.md)
 	- [Salt](md/scripts/salt.md)
 
 - 其他
