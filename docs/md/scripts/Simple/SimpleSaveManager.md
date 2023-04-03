@@ -1,43 +1,28 @@
 
+?> [返回 Simple](md/scripts/simple.md)
 
 > 存储管理器，进行存档的存储，获取，备份等操作。
 
-## 1. Runtime
+## Runtime :id=runtime
 
-### 方法
+> 静态方法
 
-#### Create [Static]
-> Create
-```csharp
-//初始化存档管理器，在使用前需要调用
-SimpleSaveManager.Create();
-```
-#### SetInt [Static]
-> SetInt 
-```csharp
-//存储int值
-SimpleSaveManager.SetInt("test", 1);
-```
-
-名称 | 类型 | 说明
--------- | -----| -----
-key | string | 存储的键
-value | int | 存储的值
-
-#### SetString [Static]
-> SetString
-```csharp
-//存储string值
-SimpleSaveManager.SetString ("test", "1");
-```
-
-名称 | 类型 | 说明
--------- | -----| -----
-key | string | 存储的键
-value | string | 存储的值
-
-
-### 属性
+类 |  说明
+-------- |  -----
+<small>[Create](md/scripts/Simple/SimpleSaveManager/runtime/Create.md)</small>  | <small>初始化存档管理器，需要在所有的应用之前调用</small>
+<small>[SetInt](md/scripts/Simple/SimpleSaveManager/runtime/SetInt.md?id=set)</small>  | <small>将int值存储到key下</small>
+<small>[GetInt](md/scripts/Simple/SimpleSaveManager/runtime/SetInt.md?id=get)</small>  | <small>从key下加载int值</small>
+<small>[SetString](md/scripts/Simple/SimpleSaveManager/runtime/SetString.md?id=set)</small>  | <small>将string值存储到key下</small>
+<small>[GetString](md/scripts/Simple/SimpleSaveManager/runtime/SetString.md?id=get)</small>  | <small>从key下加载string值</small>
+<small>[SetBool](md/scripts/Simple/SimpleSaveManager/runtime/SetBool.md?id=set)</small>  | <small>将bool值存储到key下</small>
+<small>[GetBool](md/scripts/Simple/SimpleSaveManager/runtime/SetBool.md?id=get)</small>  | <small>从key下加载bool值</small>
+<small>[SetFloat](md/scripts/Simple/SimpleSaveManager/runtime/SetFloat.md?id=set)</small>  | <small>将float值存储到key下</small>
+<small>[GetFloat](md/scripts/Simple/SimpleSaveManager/runtime/SetFloat.md?id=get)</small>  | <small>从key下加载float值</small>
+<small>[Has](md/scripts/Simple/SimpleSaveManager/runtime/Control.md?id=has)</small>  | <small>在存档中是否存在指定键</small>
+<small>[Delete](md/scripts/Simple/SimpleSaveManager/runtime/Control.md?id=delete)</small>  | <small>在存档中删除指定键的存档</small>
+<small>[Save](md/scripts/Simple/SimpleSaveManager/runtime/Control.md?id=save)</small>  | <small>将存档的缓存修改确实写入存储中</small>
+<small>[Backup](md/scripts/Simple/SimpleSaveManager/runtime/Control.md?id=backup)</small>  | <small>将存档备份到指定文件中</small>
+<small>[Restore](md/scripts/Simple/SimpleSaveManager/runtime/Control.md?id=restore)</small>  | <small>将指定存档恢复</small>
 
 ## Editor
 
