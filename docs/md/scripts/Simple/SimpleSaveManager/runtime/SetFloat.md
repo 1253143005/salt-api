@@ -1,4 +1,4 @@
-?> [返回 SimpleSaveManager](md/scripts/Simple/SimpleSaveManager.md?id=runtime)
+?> [返回 SimpleSaveManager](md/scripts/Simple/SimpleSaveManager.md?id=setget)
 
 > 在存档中，向指定key，加载，存储值
 

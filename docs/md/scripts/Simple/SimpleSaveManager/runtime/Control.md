@@ -1,7 +1,14 @@
-?> [返回 SimpleSaveManager](md/scripts/Simple/SimpleSaveManager.md?id=runtime)
+?> [返回 SimpleSaveManager](md/scripts/Simple/SimpleSaveManager.md?id=static)
 
-> 在存档中，向指定key，加载，存储值
+> 存档管理器控制
 
+## Create :id=Create
+
+> 初始化存档管理器，需要在所有的应用之前调用
+
+```csharp
+SimpleSaveManager.Create();
+```
 --------------------------------
 
 ## Has :id=has
