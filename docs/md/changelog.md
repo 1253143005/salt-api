@@ -1,9 +1,11 @@
 # 版本更改
 
-### v1.4.4-rc1
 
-- #### release
-    - 初始化版本.
-    - core 版本 v4
-    - Simple 版本 v4
-    - Salt 版本 v1
+## [v 1.2.1]
+Package中的Editor dll 需要使用unitypackage方式引入。
+
+## [v 1.1.1]
+Package中不再在设置中显示插件版本号，核心版本号。
+
+## [v 1.0.0]
+创建初始版本

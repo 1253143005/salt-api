@@ -1,47 +1,45 @@
 
-# 介绍
+# 安装
 
-## 说明
+## 插件包
 
-**当前插件需要第三方插件**
+**当前插件需要安装**
 
-当前插件需要运行需要工程内引入如下插件：
-
-名称|状态
+名称|说明
 -------- | -----
-IngameDebugConsole|`已包含，不可重复引入工程`
-DOTween|需引入
-Odin Inspector|需引入
-Spine|需引入`[4.x版本]`
+com.esotericsoftware.spine.spine-unity|spine插件，只引入一次即可
+com.mw.pandaaddin|panda addin插件
 
-**插件由以下三个部分组成**
+**插件更新**
 
-名称 |  解释
--------- | -----
-Core |  核心部分
-Simple | 应用部分 
-Salt| 工程部分 
+插件更新需要查看插件的版本号，版本号一致则不需要更新
 
-## 工具Tab
+## 安装方法
 
-打开设置
-`Tools > 猫熊 > Simple > 打开设置`
+使用**Package Manager**进行安装
 
-## 设置
+1.	打开Package Manager
+`Windows > Package Manager`
+2. 点击+号按钮
 
-使用本插件，unity可能需要如下设置：
+![](installation_md_files/07315c50-d4e8-11ed-add9-63b3093e49b1.jpeg?v=1&type=image)
 
-1. Unity的Play模式编译
- 
-	`Editor > Project Settings > Editor > Enter Play Mode Settings`	
-	勾选第一个Enter Play Mode Options选项，可以使在Play模式点击时，不再重复编译一次
-	
-	![](installation_md_files/38f29960-d1f1-11ed-afb0-c340f1571a81.jpeg?v=1&type=image)
- 
-2. 声音延迟设置
- 
-	`Editor > Project Settings > Audio > DSP Buffer Size`	
-	设置成Best latency则可以使当前的音频延迟最低
-	
-	![](installation_md_files/2ccadfd0-d1f1-11ed-afb0-c340f1571a81.jpeg?v=1&type=image)
-	
+3. 选择Add package from tarball...
+4. 选择对应的`.tgz`文件即可
+
+?> 其中Panda Addin包需要定时更新最新版本，spine包则不需要
+
+**插件安装完毕**
+
+![](installation_md_files/c5da4270-d4e8-11ed-add9-63b3093e49b1.jpeg?v=1&type=image)
+
+
+## 使用
+
+`保证第三方插件全部引入完毕之后`
+
+**释放 Panda Addin Editor DLL**
+
+1. 导入插件
+2. 导入Editor代码包
+`Tools > 猫熊 > 工具 > 释放Editor DLL`
