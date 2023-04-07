@@ -9,6 +9,7 @@
 		-  [SimplePool](md/scripts/Simple/SimplePool.md)
 	- [Salt](md/scripts/salt.md)
 		-  [LevelResource](md/scripts/Salt/LevelResource.md)
+		-  [AudioHandler](md/scripts/Salt/AudioHandler.md)
 		-  [SaltGameObject](md/scripts/Salt/SaltGameObject.md)
 
 - 其他
