@@ -1,9 +1,5 @@
-# 版本更改
 
-### v1.4.4-rc1
-
-- #### release
-    - 初始化版本.
-    - core 版本 v4
-    - Simple 版本 v4
-    - Salt 版本 v1
+# Core
+类 |  说明
+-------- |  -----
+<small>[SoundManager](md/scripts/Core/SoundManager.md)</small>  | <small>声音管理器</small>

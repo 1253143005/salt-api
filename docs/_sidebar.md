@@ -4,6 +4,7 @@
   
 - 代码
 	- [Core](md/scripts/core.md)
+		-  [SoundManager](md/scripts/core/SoundManager.md)
 	- [Simple](md/scripts/simple.md)
 		-  [SimpleSaveManager](md/scripts/Simple/SimpleSaveManager.md)
 		-  [SimplePool](md/scripts/Simple/SimplePool.md)

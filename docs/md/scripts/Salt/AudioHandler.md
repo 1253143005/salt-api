@@ -196,3 +196,27 @@ AudioProperty audioProperty = AudioHandler.GetInstance().ParseAudioPropertyData(
 ```
 <small>[- 返回 -](md/scripts/Salt/AudioHandler.md?id=func)</small>
 
+## 关联类 :id=connected
+
+### Enum
+
+#### [AudioKeyboardKeyType](md/scripts/Salt/AudioHandler/AudioKeyboardKeyType.md)
+#### [AudioDetermineType](md/scripts/Salt/AudioHandler/AudioDetermineType.md)
+#### [AudioDetermineKeyType](md/scripts/Salt/AudioHandler/AudioDetermineKeyType.md)
+#### [AudioSyllableSustainType](md/scripts/Salt/AudioHandler/AudioSyllableSustainType.md)
+#### [SyllableTriggerType](md/scripts/Salt/AudioHandler/SyllableTriggerType.md)
+
+### Class
+
+#### [AudioProperty](md/scripts/Salt/AudioHandler/AudioProperty.md)
+#### [AudioTrackProperty](md/scripts/Salt/AudioHandler/AudioTrackProperty.md)
+#### [AudioTempoProperty](md/scripts/Salt/AudioHandler/AudioTempoProperty.md)
+#### [AudioDeterminProperty](md/scripts/Salt/AudioHandler/AudioDeterminProperty.md)
+#### [AudioDeterminChordSoundProperty](md/scripts/Salt/AudioHandler/AudioDeterminChordSoundProperty.md)
+#### [TrackDetail](md/scripts/Salt/AudioHandler/TrackDetail.md)
+#### [SyllableDetail](md/scripts/Salt/AudioHandler/SyllableDetail.md)
+#### [SyllableDetailDetermineProperty](md/scripts/Salt/AudioHandler/SyllableDetailDetermineProperty.md)
+#### [AudioFileSetting](md/scripts/Salt/AudioHandler/AudioFileSetting.md)
+#### [AudioMinMaxProperty](md/scripts/Salt/AudioHandler/AudioMinMaxProperty.md)
+
+

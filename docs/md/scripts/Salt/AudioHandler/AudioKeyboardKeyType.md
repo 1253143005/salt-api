@@ -1,5 +1,5 @@
 
-?> [返回 AudioHandler](md/scripts/Salt/AudioHandler.md)
+?> [返回 AudioHandler](md/scripts/Salt/AudioHandler.md?id=connected)
 
 > 按键类型。
 

@@ -1,76 +1,55 @@
 
-?> [返回 AudioHandler](md/scripts/Salt/AudioHandler.md)
+?> [返回 AudioHandler](md/scripts/Salt/AudioHandler.md?id=connected)
 
-> 关卡声音控制器。
-
-!> 此控制类一个关卡只允许存在一个 
+> 音轨属性。
 
 ## 方法 :id=func
 
 类 |  说明
 -------- |  -----
-<small>Remove</small>  | <small>移除数据`OnDestroy时会自动调用`</small>
+<small>[CheckIsActive](md/scripts/Salt/AudioHandler/AudioProperty.md?id=CheckIsActive)</small>  | <small>判断当前的音轨是否激活</small>
+<small>[Copy](md/scripts/Salt/AudioHandler/AudioProperty.md?id=Copy)</small>  | <small>克隆当前属性</small>
 
 ## 属性 :id=param
 
-类 | 类型 | 赋值/获取 |  说明
+类 | 类型 |  音乐编辑器专用 |  说明
 -------- |  ----- |  -----|  -----
-<small>isInGame</small>  | <small>bool</small> | <small>`get`</small> | <small>关卡数据</small>
-<small>play</small>  | <small>bool</small> | <small>`set/get`</small> | <small>关卡正在播放中</small>
-<small>pause</small>  | <small>bool</small> | <small>`set/get`</small> | <small>关卡暂停</small>
-<small>time</small>  | <small>float</small> | <small>`set/get`</small> | <small>关卡运行时间(秒)</small>
-<small>allTracks</small>  | <small>List< TrackDetail ></small> | <small>`get`</small> | <small>所有音轨</small>
+<small>id</small>  | <small>string</small>| <small>false</small> | <small>ID</small>
+<small>name</small>  | <small>string</small>| <small>false</small> | <small>音轨名称</small>
+<small>color</small>  | <small>int</small>| <small>true</small> | <small>音轨颜色</small>
+<small>mute</small>  | <small>bool</small>| <small>true</small> | <small>是否静音</small>
+<small>perfect</small>  | <small>bool</small>| <small>true</small> | <small>是否完美</small>
+<small>active</small>  | <small>bool</small>| <small>true</small> | <small>是否激活</small>
+<small>activeChordSound</small>  | <small>bool</small> | <small>true</small>| <small>是否激活和弦音乐</small>
+<small>chordSoundIDList</small>  | <small>List< string ></small> | <small>false</small>| <small>和弦音乐ID列表</small>
+<small>isAlwaysDetermined</small>  | <small>bool</small> | <small>false</small>| <small>是永久触发</small>
+<small>forwardTime</small>  | <small>float</small> | <small>false</small>| <small>提前值</small>
+<small>determineKeyType</small>  | <small>[AudioDetermineKeyType](md/scripts/Salt/AudioHandler/AudioDetermineKeyType.md)</small>| <small>false</small> | <small>判定按键类型</small>
+<small>keyboardKeyType</small>  | <small>[AudioKeyboardKeyType](md/scripts/Salt/AudioHandler/AudioKeyboardKeyType.md)</small> | <small>false</small>| <small>按键</small>
+<small>tempoProperties</small>  | <small>List< [AudioTempoProperty](md/scripts/Salt/AudioHandler/AudioTempoProperty.md) ></small> | <small>false</small>| <small>节奏</small>
+<small>determinProperties</small>  | <small>[AudioDeterminProperty](md/scripts/Salt/AudioHandler/AudioDeterminProperty.md) []</small> | <small>false</small>| <small>音节判定属性</small>
+<small>chordDeterminCopyProperties</small>  | <small>[AudioDeterminChordSoundProperty](md/scripts/Salt/AudioHandler/AudioDeterminChordSoundProperty.md) []</small> | <small>false</small>| <small>和弦音乐ID的索引列表-拷贝副本</small>
 
-## 按键回调 :id=keyCallback
+## 方法实现
 
-类 | 类型 | 参数说明 | 说明
--------- |  ----- |   ----- | -----
-<small>onKeyboardDown</small>  | <small>UnityEvent<AudioKeyboardKeyType></small> | <small>按下的按键类型</small> | <small>按键按下回调</small>
-<small>onKeyboardHold</small>  | <small>UnityEvent<AudioKeyboardKeyType></small> | <small>持续按下的按键类型</small>  | <small>按键持续按下回调</small>
-<small>onKeyboardUp</small>  | <small>UnityEvent<AudioKeyboardKeyType></small> | <small>抬起的按键类型</small>  | <small>按键抬起回调</small>
+### CheckIsActive() :id=CheckIsActive
 
-## 检测回调 :id=DetermineCallback
+> 判断当前的音轨是否激活
 
-类 | 类型 | 参数说明 | 说明
--------- |  ----- | -----| -----
-<small>onDetermineMiss</small>  | <small>UnityEvent<TrackDetail, int></small> | <small>音轨，触发音节</small> | <small>触发miss回调</small>
-<small>onDeterminePerfect</small>  | <small>UnityEvent<TrackDetail, int></small> | <small>音轨，触发音节</small> | <small>触发perfect回调</small>
-<small>onDetermineGood</small>  | <small>UnityEvent<TrackDetail, int></small> | <small>音轨，触发音节</small> | <small>触发good回调</small>
-<small>onDetermineAlways</small>  | <small>UnityEvent<TrackDetail, int></small> | <small>音轨，触发音节</small> | <small>触发always回调</small>
+***例子***
 
+``` csharp
+AudioTrackProperty property; //已经定义的音轨属性
+bool isActive= property.CheckIsActive();
+```
 
+### Copy() :id=Copy
 
-## CustomAudioProperty :id=CustomAudioProperty 
-> 音乐属性
+> 克隆当前属性
 
-类 | 类型 | 说明
--------- |  ----- |  -----
-<small>categroy</small>  | string | <small>声音类别</small>
-<small>audioClips</small>  | AudioClip[] | <small>此类别声音中的声音文件</small>
+***例子***
 
-
-## Editor
-
-### 创建
-
-在`Hierarchy`窗口点击鼠标右键，选择
-
-`猫熊 > Salt > 关卡资源(LevelResource)`
-
-会自动创建对应的GameObject
-
-### 关卡查看
-
-![](LevelResource_md_files/234e3d40-d50b-11ed-add9-63b3093e49b1.jpeg?v=1&type=image
- ':size=315x279'
-)
-
-点击设置可以打开关卡设置界面
-
-![](LevelResource_md_files/b6427a80-d50b-11ed-add9-63b3093e49b1.jpeg?v=1&type=image ':size=901x620')
-
-设置及内容如图所示。
-
-音轨有对应的音轨序列按钮，点击可以显示选择查看的具体音轨内容
-
-![](LevelResource_md_files/31efdb00-d50c-11ed-add9-63b3093e49b1.jpeg?v=1&type=image ':size=300x240')
+``` csharp
+AudioTrackProperty oldProperty; //已经定义的音轨属性
+AudioTrackProperty newProperty = oldProperty.Copy();
+```
